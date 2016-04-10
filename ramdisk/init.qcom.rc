@@ -38,6 +38,9 @@ on early-init
     write /sys/class/leds/lcd-backlight/trigger "backlight"
 
 on init
+    # Load custom symbols
+    export LD_SHIM_LIBS "/system/vendor/lib64/libdpmframework.so|libshim_parcel.so:/system/vendor/lib64/libcne.so|libshim_parcel.so"
+
     # Set permissions for persist partition
     mkdir /persist 0771 system system
 

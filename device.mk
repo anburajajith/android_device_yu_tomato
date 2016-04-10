@@ -106,7 +106,8 @@ PRODUCT_PACKAGES += \
 
 # Misc
 PRODUCT_PACKAGES += \
-    libtinyxml
+    libtinyxml \
+    libshim_parcel
 
 # Power HAL
 PRODUCT_PACKAGES += \
