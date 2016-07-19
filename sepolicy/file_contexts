@@ -17,3 +17,6 @@
 
 # Sensors
 /dev/mmc3416x                                   u:object_r:sensors_device:s0
+
+# Baseband
+/system/etc/set_baseband.sh                     u:object_r:set_baseband_exec:s0
