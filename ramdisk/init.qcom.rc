@@ -516,6 +516,11 @@ service qmuxd /system/bin/qmuxd
     user root
     group radio audio bluetooth gps qcom_diag
 
+service set_baseband /system/bin/sh /set_baseband.sh
+    class late_start
+    user root
+    oneshot
+
 service netmgrd /system/bin/netmgrd
     class main
 
