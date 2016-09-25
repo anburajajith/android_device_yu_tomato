@@ -113,7 +113,8 @@ PRODUCT_PACKAGES += \
 # Misc
 PRODUCT_PACKAGES += \
     libtinyxml \
-    libshim_parcel
+    libshim_parcel \
+    libshim_boringssl
 
 # Power HAL
 PRODUCT_PACKAGES += \
